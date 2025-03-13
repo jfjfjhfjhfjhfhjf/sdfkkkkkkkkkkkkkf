@@ -5,14 +5,17 @@ let i = 0;
 let speed = 150; 
 let deleteSpeed = 100; 
 let loopDelay = 1000; 
+let finalDelay = 1000; 
 
 function updateTitle() {
   if (!isDeleting) {
     currentText = titleText.substring(0, i);
     i++;
     if (i > titleText.length) {
-      isDeleting = true;
-      setTimeout(updateTitle, loopDelay);
+      setTimeout(function() {
+        isDeleting = true;
+        updateTitle();
+      }, loopDelay);
     } else {
       document.title = currentText;
       setTimeout(updateTitle, speed);
@@ -20,9 +23,14 @@ function updateTitle() {
   } else {
     currentText = titleText.substring(0, i);
     i--;
-    if (i <= 0) {
-      isDeleting = false;
-      setTimeout(updateTitle, loopDelay); 
+    if (i <= 1) { 
+      setTimeout(function() {
+        document.title = "D";
+        setTimeout(function() {
+          isDeleting = false; 
+          updateTitle(); 
+        }, finalDelay); 
+      }, loopDelay);
     } else {
       document.title = currentText;
       setTimeout(updateTitle, deleteSpeed);
