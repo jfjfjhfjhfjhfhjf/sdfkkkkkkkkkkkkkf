@@ -6,7 +6,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DarkyyTweaks</title>
-    <meta name="trustpilot-one-time-domain-verification-id" content="75a7e2e5-824c-4050-9a59-f5681fb22ce9"/>
     <meta name="title" content="DarkyyTweaks - Optimiza al máximo tu equipo">
     <meta name="description" content="Compra ya nuestras utilidades premium/pro y optimiza tu pc para el mejor rendimiento en cualquier juego con DarkyyTweaks.">
     <meta name="keyword" content="DarkyyTweaks, optimizar pc, rendimiento, utilidades premium, latencia, mejorar juegos">
@@ -29,7 +28,6 @@
 
 <body class="page bg-dark relative">
     <div class="mall-modal"></div>
-    <!-- Inicio de la pagina-->
 
     <header id="layout-header">
         <nav class="bg-transparent border-gray-200 fixed w-full z-20 top-0 left-0">
@@ -93,7 +91,6 @@
         </div>
     </section>
     <div class="subpage-blur"></div>
-    <!-- Footer -->
     <footer id="layout-footer" class="mt-20">
         <div class="grid-container mx-auto">
             <div class="col-span-12 sm:col-span-4 lg:col-span-3">
@@ -144,56 +141,14 @@
                 </ul>
             </div>
         </div>
-        <div class="green-radial footer" </footer>
+        <div class="green-radial footer"></div>
             <script src="themes/darkyytweaks/assets/js/app.js"></script>
             <script src="plugins/offline/mall/assets/pubsub.js"></script>
-            <script>
-                window.Mall = windows.Mall || {}
-                $(function () {
-                    window.Mall.Modal = $('<div class="mall-modal">')
-                    window.Mall.Modal.on('click', function (e) {
-                        if (e.target.classList.contains('mall-modal')) {
-                            window.Mall.Modal.removeClass('mall-modal--visible')
-                        }
-                    })
-                    window.Mall.Modal.prependTo(document.body)
-                    window.Mall.Callbacks = {
-                        Checkout: []
-                    }
-                })
-            </script>
-            <script>
-                $(function () {
-                    var $count = $('.js-count');
-                    $.subscribe('mall.cart.productAdded', function (e, data) {
-                        $count.removeClass('invisible').text(data.new_items_quantity).show();
-                    });
-                    $.subscribe('mall.cart.productRemoved', function (e, data) {
-                        $count.text(data.new_items_quantity);
-                    });
-                });
-            </script>
             <script src="modules/system/assets/js/framework-extras.js"></script>
             <link rel="stylesheet" property="stylesheet" href="modules/system/assets/css/framework-extras.css">
             <div id>
                 #shadow-root (closed)
             </div>
-            <script type="text/javascript" id charset>
-                !function (b, e, f, g, a, c, d) { b.fbq || (a = b.fbq = function () { a.callMethod ? a.callMethod.apply(a, arguments) : a.queue.push(arguments) }, b._fbq || (b._fbq = a), a.push = a, a.loaded = !0, a.version = "2.0", a.queue = [], c = e.createElement(f), c.async = !0, c.src = g, d = e.getElementsByTagName(f)[0], d.parentNode.insertBefore(c, d)) }(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js"); fbq("init", "424652830053881"); fbq("track", "PageView");
-            </script>
-            <noscript>
-                "<img height="1" width="1" style="display:none"
-                    src="https://www.facebook.com/tr?id=424652830053881&amp;ev=PageView&amp;noscript=1">"
-            </noscript>
-            <script type="text/javascript" id charset>
-                !function (d, g, e) {
-                    d.TiktokAnalyticsObject = e; var a = d[e] = d[e] || []; a.methods = "page track identify instances debug on off once ready alias group enableCookie disableCookie holdConsent revokeConsent grantConsent".split(" "); a.setAndDefer = function (b, c) { b[c] = function () { b.push([c].concat(Array.prototype.slice.call(arguments, 0))) } }; for (d = 0; d < a.methods.length; d++)a.setAndDefer(a, a.methods[d]); a.instance = function (b) { b = a._i[b] || []; for (var c = 0; c < a.methods.length; c++)a.setAndDefer(b, a.methods[c]); return b }; a.load =
-                        function (b, c) { var f = "https://analytics.tiktok.com/i18n/pixel/events.js"; a._i = a._i || {}; a._i[b] = []; a._i[b]._u = f; a._t = a._t || {}; a._t[b] = +new Date; a._o = a._o || {}; a._o[b] = c || {}; c = document.createElement("script"); c.type = "text/javascript"; c.async = !0; c.src = f + "?sdkid\x3d" + b + "\x26lib\x3d" + e; b = document.getElementsByTagName("script")[0]; b.parentNode.insertBefore(c, b) }; a.load("CRGORUBC77U8UGFD1EU0"); a.page()
-                }(window, document, "ttq");
-            </script>
-            <script type="text/javascript" id charset>
-                (function (a, b, d) { if (!a.snaptr) { var c = a.snaptr = function () { c.handleRequest ? c.handleRequest.apply(c, arguments) : c.queue.push(arguments) }; c.queue = []; a = "script"; r = b.createElement(a); r.async = !0; r.src = d; b = b.getElementsByTagName(a)[0]; b.parentNode.insertBefore(r, b) } })(window, document, "https://sc-static.net/scevent.min.js"); snaptr("init", "fa675ab8-6f5c-491f-b823-4063c2189f61", {}); snaptr("track", "PAGE_VIEW");
-            </script>
 </body>
 
 </html>
