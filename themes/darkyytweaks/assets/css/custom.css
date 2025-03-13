@@ -1,0 +1,10 @@
+.dark-alert {
+    background: rgba(0, 0, 0, 0.1);
+    border: 1px solid #374151;
+    color: #6d9ae3;
+}
+
+.mall-product-items__ordered-list li {
+    padding-top: 0rem;
+    padding-bottom: 1.05rem;
+}
